@@ -1,0 +1,276 @@
+body {
+    margin: 0 auto;
+    font-family: "Montserrat", "sans-serif";
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 95vh;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    right: 0;
+    background-size: cover;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.btn__nav{
+    display: none;
+}
+.header__logo{
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+.header__inner a{
+    text-decoration: none;
+    color:white;
+}
+.header__inner{
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+.item-index{
+    padding-right: 10px;
+    transition: color .2s linear;
+}
+.item-index:hover{
+    color: rgb(37, 37, 60);
+}
+
+.header__video {
+    background-color: #f8b358;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 30vh auto 10vh;
+}
+
+.video__treangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.medicine{
+    margin-top: 1px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background: url('D:/VStudio/web/static/img/piron-guillaume-y5hQCIn1c6o-unsplash.jpg') center no-repeat;
+    background-size: cover;
+}
+.section__title{
+    color: lightblue;
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.section__description{
+    margin-top: 1%;
+}
+.section__description__text{
+    color:azure;
+    font-size: 100%;
+}
+.section__description__name{ 
+    color:azure;
+}
+.section__data{
+    display: block;
+    margin-top: 10%;
+    color: transparent;
+    font-family: sans-serif;
+    animation-play-state: paused;
+    animation-name: AnimationText;
+}
+.section__data:hover{
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+.industry{
+    margin-top: 1px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background: url('D:/VStudio/web/static/img/ant-rozetsky-SLIFI67jv5k-unsplash.jpg') center no-repeat;
+    background-size: cover;
+}
+.building{
+    margin-top: 1px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background: url('D:/VStudio/web/static/img/scott-blake-s9XDWLJ_LyE-unsplash.jpg') center no-repeat;
+    background-size: cover;
+}
+.building__description__text__color{
+    font-size: 120%;
+}
+.carbuilding{
+    margin-top: 1px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background: url('D:/VStudio/web/static/img/mtz.jpg') center no-repeat;
+    background-size: cover;
+}
+.agriculture{
+    margin-top: 1px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background: url('D:/VStudio/web/static/img/james-baltz-jAt6cN6zl8M-unsplash.jpg') center no-repeat;
+    background-size: cover;
+}
+.forestry{
+    margin-top: 1px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background: url('D:/VStudio/web/static/img/serge0n-qXY_pWrirSY-unsplash.jpg') center no-repeat;
+    background-size: cover;
+}
+.it{
+    margin-top: 1px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background: url('D:/VStudio/web/static/img/mohammad-rahmani-CDBkMNZmd7o-unsplash.jpg') center no-repeat;
+    background-size: cover;
+}
+.culture{
+    margin-top: 1px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background: url('D:/VStudio/web/static/img/culture.jpg') center no-repeat;
+    background-size: cover;
+}
+.architecture{
+    margin-top: 1px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background: url('D:/VStudio/web/static/img/libiry.jpg') center no-repeat;
+    background-size: cover;
+}
+.footer{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color:white;e
+}
+.footer__img{
+    width: 5rem;
+}
+.container__blure{
+    transition: all .2s linear;
+}
+.container__blure:hover{
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+}
+.header .container__blure:hover{
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 95vh;
+}
+
+.medicine .container__blure:hover{
+    width: 100%;
+    height: 100vh;
+}
+.btn-nav{
+    width: 30px;
+}
+.item{
+    padding-right: 20px;
+}
+.item-nav{
+    display:none;
+}
+@keyframes AnimationText {
+    from{
+        transform: scale(1);
+        color:transparent;
+    }
+    to{
+        transform: scale(1.05);
+        color: white;
+    }
+}
+a{
+    padding:10px;
+}
+@media screen and (max-width:1000px){
+    .nav{
+        display: none;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+    .item-nav{
+        display:block;
+        border-bottom:1px solid white;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius:10px;
+    }
+    .btn__nav{
+        display: block;
+    }
+    .header__inner:hover .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .header__inner:hover .btn__nav{
+        display: none;
+    }
+    .item{
+        padding: 10px 10px;
+    }
+    .industry, .medicine, .agriculture, .architecture, .building, .carbuilding, .culture, .it, .forestry{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .container__blure:hover{
+        height: auto;
+    }
+    .header__video{
+        margin: 10vh auto 10vh;
+    }
+}

@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block 'content' %}
+     <header class="header__category">
+        <div class="header___link__category">
+            <h4>{{image_background}}</h4>
+        </div>
+    </header>
+     <section class="section__category " style="background:url('{{ image_background.image.url }}'), 50% 50% no-repeat fixed;">
+        <div class="container__blure__category">
+            <div class="container">
+                {% for object in text %}
+                {% if forloop.counter|divisibleby:2 %}
+                <div class="row header__row">
+                    <div class="col-sm-12 col-md-8">
+                        <p>{{object.description}}</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="{{object.image.url}}" alt="" class="img-fluid img__header">
+                    </div>
+                </div>
+                {% else %}
+                <div class="row header__row">
+                    <div class="col-sm-12 col-md-4">
+                        <img src="{{object.image.url}}" alt="" class="img-fluid img__header">
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <p>{{object.description}}</p>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+        </div>
+        </div>
+    </section>
+{% endblock %}
+

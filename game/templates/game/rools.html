@@ -1,0 +1,67 @@
+{% extends 'game/base.html'%}
+{% load static %}
+
+{% block 'content' %}
+<body class="game-body">
+    <section class="section-game">
+        <div class="title">
+            <h1>"Путешевствие по стране экономии"</h1>
+        </div>
+        <div class="inner">
+            <div class="article">
+                <p>Цель игры-первым дойти до финиша. <br>
+                    Количество игроков:от 2 и более. <br>
+                    Возраст:8+</p>
+            </div>
+        </div>
+    </section>
+    <section class="rool">
+        <div class="rools">
+            <div class="color-card">
+                <div class="green"></div>
+                <div class="text-icon">
+                    <p>Можешь походить еще один раз.</p>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="purple"></div>
+                <div class="text-icon">
+                    <p>Сделай 3 хода вперед.</p>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="pink"></div>
+                <div class="text-icon">
+                    <p>Сделай 4 хода назад.</p>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="blue"></div>
+                <div class="text-icon">
+                    <p>Пропуск хода.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="icons">
+        <div class="icon">
+            {% for item in elements %}
+                <div class="icon-card">
+                    <img src="{{item.image.url}}" alt="" class="img-icon">
+                    <div class="text-icon">
+                        <p>{{item.text}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    <section class="images">
+        <img src="{% static 'img/economy.png' %}" alt="Front" class="img">
+        <img src="{% static 'img/back.png' %}" alt="Back" class="img">
+    </section>
+    <section class="buttons">
+        <a href="{% static 'img/economy.png' %}" class="download-button" download>Скачать (Основную сторону)</a>
+        <a href="{% static 'img/back.png' %}" class="download-button" download>Скачать (Заднюю сторону)</a>
+    </section>
+</body>
+{% endblock %}

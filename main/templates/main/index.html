@@ -1,0 +1,430 @@
+{% extends 'main/base.html'%}
+{% load static %}
+
+{% block 'content' %}
+    <header class="header" style="background: url({% static 'img/vasilki.png' %}) center no-repeat;">
+        <div class="container__blure">
+            <div class="header__inner">
+                <div class="header__logo">Беларусь <br>
+                    Современная</div>
+                <div class="header__nav">
+                    <div class="btn__nav">
+                        <img src="static/img/menu.png" class="btn-nav"></img>
+                    </div>
+                    <div class="nav">
+                        <a class="item-nav">Навигация</a>
+                        <a href="#medicine" class="item-index">Медицина</a>
+                        <a href="#industry" class="item-index">Промышленноть</a>
+                        <a href="#building" class="item-index">Строительство</a>
+                        <a href="#carbuilding" class="item-index">Машиностроение</a>
+                        <a href="#agriculture" class="item-index">Сельское<br> хозяйство</a>
+                        <a href="#forestry" class="item-index">Лесное<br> хозяйство</a>
+                        <a href="#it" class="item-index">IT <br>(Иформационные технологии)</a>
+                        <a href="#culture" class="item-index">Культура</a>
+                        <a href="#architecture" class="item-index">Архитектура</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__video" data-bs-toggle="modal" data-bs-target="#MyModal">
+                <div class="video__treangle"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="medicine" class="medicine" style="background: url({% static 'img/piron-guillaume-y5hQCIn1c6o-unsplash.jpg' %}) center no-repeat;">
+        <div class="container__blure">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center text-uppercase mb-5 section__title">Медицина</h1>
+                    </div>
+                </div>
+                <div class="section__description">
+                    <p class="section__description__text">"Наше государство вошло в число мировых лидеров по уровню развития здравоохранения и медицины. Каждый гражданин независимо от достатка имеет возможность бесплатно получить любой вид медицинской помощи, в том числе самой высокотехнологичной"</p>
+                    <h2 class="section__description__name">Александр Григорьевич Лукашенко.</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="{% url 'main:medicine' %}" class="btn btn-secondary">Достижения Беларуси в Медицине</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section__data data__hidden">
+                <div class="row text-center gy-12">
+                    <div class="col-sm-12 col-md-6">
+                        <h2>1-e</h2>
+                        <h5>Место среди стран СНГ.</h5>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h2>40-e</h2>
+                        <h5>Место самой эффективной системы здравоохранения.</h5>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h2>585</h2>
+                        <h5>Больниц на территории страны.</h5>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h2>2660</h2>
+                        <h5>Организации здравоохранения.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industry" class="industry" style="background: url({% static 'img/ant-rozetsky-SLIFI67jv5k-unsplash.jpg' %}) center no-repeat;">
+        <div class="container__blure">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"><h2 class="text-center text-uppercase mb-5 section__title">Промышленность</h2></div>
+                </div>
+                <div class="section__description">
+                    <h2 class="section__description__name">Промышленное производство формирует более четверти валового внутреннего продукта Беларуси – 28,3%.</h2>
+                    <p class="section__description__text">Наиболее развитые отрасли промышленности страны: производство продуктов питания, напитков и табачных изделий, машиностроение и металлообработка, легкая промышленность, деревообработка, нефтехимическая и фармацевтическая отрасли.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="{% url 'main:industry' %}" class="btn btn-secondary">Достижения Беларуси в Промышленности</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section__data data__hidden">
+                <div class="row text-center gy-12 gx-2">
+                    <div class="col-sm-12 col-md-6">
+                        <h2 >Более 75%</h2>
+                        <h5>За 2022 год машиностроительной продукции<br>
+                             реализовалось за рубеж.</h5>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h2>На $740,6 млн.</h2>
+                        <h5 class="data__hidden">В 2021 году строительных материалов экспортировано.</h5>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h2>$6,7 млрд.</h2>
+                        <h5>Cоставил за 2021 год экспорт<br>
+                             сельскохозяйственной продукции и продуктов питания.</h5>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h2>На $740,6 млн.</h2>
+                        <h5>В 2021 году строительных материалов экспортировано.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="building" class="building" style="background: url({% static 'img/scott-blake-s9XDWLJ_LyE-unsplash.jpg' %}) center no-repeat;">
+        <div class="container__blure">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center text-uppercase mb-5 section__title">Строительство</h1>
+                    </div>
+                </div>
+                <div class="section__description">
+                    <p class="section__description__text building__description__text__color">Строительный комплекс Республики Беларусь включает в себя свыше 10 тыс. организаций различной формы собственности, осуществляющих архитектурную, градостроительную и строительную деятельность. В 2022 году в строительстве было занято более 192 тыс. работников организаций.</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="{% url 'main:construction' %}" class="btn btn-secondary">Достижения Беларуси в Строительстве</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__data data__hidden">
+                    <div class="row text-center gy-12">
+                        <div class="col-sm-12 col-md-6">
+                            <h2 >1758,9 тыс. кв.м</h2>
+                            <h5>Площади жилья введено в эксплуатацию.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>870,9 тыс. кв.м</h2>
+                            <h5 class="data__hidden">Площади жилья введено в эксплуатацию индивидуальных жилых домов.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>Почти 254 тыс. человек.</h2>
+                            <h5>Заняты в строительстве.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>Br7172,7 млн.</h2>
+                            <h5>Объем подрядных работ в строительстве за январь-июнь 2023 года.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carbuilding" class="carbuilding" style="background: url({% static 'img/mtz.jpg' %}) center no-repeat;">
+        <div class="container__blure">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center text-uppercase mb-5 section__title">Промышленность
+                            (Машиностроение)</h1>
+                    </div>
+                </div>
+                <div class="section__description">
+                    <p class="section__description__text building__description__text__color">Машиностроение является ведущей отраслью, опорой и движущей силой экономики страны, играет важную роль в социально-экономическом и интеллектуальном развитии государства и по праву считается фундаментом всего промышленного комплекса.</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="{% url 'main:carbuilding' %}" class="btn btn-secondary">Достижения Беларуси в Машиностроении</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__data data__hidden">
+                    <div class="row text-center gy-12">
+                        <div class="col-sm-12 col-md-6">
+                            <h2>Более 75%</h2>
+                            <h5>За 2022 год машиностроительной продукции реализовалось за рубеж.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>МТЗ</h2>
+                            <h5 class="data__hidden">Минский тракторный завод является одним из крупнейших предприятий машиностроения в Беларуси.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>МАЗ</h2>
+                            <h5>Минский автомобильный заводявляется одним из ведущих производителей грузовых автомобилей в Беларуси.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>БелАЗ</h2>
+                            <h5>Белорусский автомобильный завод является крупнейшим производителем самосвалов в мире.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agriculture" class="agriculture" style="background: url({% static 'img/james-baltz-jAt6cN6zl8M-unsplash.jpg' %}) center no-repeat;">
+        <div class="container__blure">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center text-uppercase mb-5 section__title">Сельское хозяйство</h1>
+                    </div>
+                </div>
+                <div class="section__description">
+                    <p class="section__description__text building__description__text__color">Сельское хозяйство является важной отраслью экономики Республики Беларусь, обеспечивающей продовольственную безопасность и экспортный потенциал.</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="{% url 'main:agriculture' %}" class="btn btn-secondary">Достижения Беларуси в Сельском хозяйстве</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__data data__hidden">
+                    <div class="row text-center gy-12">
+                        <div class="col-sm-12 col-md-6">
+                            <h2 >6,8%</h2>
+                            <h5>Составил по предварительной оценке в 2022 году вклад сельскохозяйственного производства в объем ВВП страны.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>47,6 тыс. т.</h2>
+                            <h5 class="data__hidden">В 2022 году его произведено льноволокна.Беларусь входит в пятерку ведущих производителей льноволокна.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>1 382</h2>
+                            <h5>Cельскохозяйственныx организаций на территории страны.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>$6,7 млрд. </h2>
+                            <h5>На столько в 2021 г. поставлено за рубеж продовольственных товаров и сельскохозяйственного сырья.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="forestry" class="forestry" style="background: url({% static 'img/serge0n-qXY_pWrirSY-unsplash.jpg' %}) center no-repeat;">
+        <div class="container__blure">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center text-uppercase mb-5 section__title">Лесное Хозяйство</h1>
+                    </div>
+                </div>
+                <div class="section__description">
+                    <h2 class="section__description__name">Лес в Беларуси занимает 40,1% территории страны.</h2>
+                    <p class="section__description__text building__description__text__color">По ряду ключевых показателей (лесистость территории, площадь лесов и запас растущей древесины в пересчете на одного жителя) страна входит в десятку ведущих европейских держав. На каждого жителя Беларуси приходится около 1 га лесных насаждений. Общая площадь земель лесного фонда превышает 9,7 млн га.</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="{% url 'main:forestry' %}" class="btn btn-secondary">Достижения Беларуси в Лесном хозяйстве</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__data data__hidden">
+                    <div class="row text-center gy-12">
+                        <div class="col-sm-12 col-md-6">
+                            <h2 >Не менее 30 тыс. га.</h2>
+                            <h5>Новых лесов создается ежегодно.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>57,7%</h2>
+                            <h5 class="data__hidden">От общей площади леса Беларуси представлены преимущественно хвойными насаждениями.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>43,7%</h2>
+                            <h5>От общей площади леса Беларуси лиственные насаждения.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>24 млн куб.м.</h2>
+                            <h5>Древесины было заготовлено в 2022 году, почти половина - механизированным способом.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="it" class="it" style="background: url({% static 'img/mohammad-rahmani-CDBkMNZmd7o-unsplash.jpg' %}) center no-repeat;">
+        <div class="container__blure">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center text-uppercase mb-5 section__title">IT
+                            (Информационные Технологии)</h1>
+                    </div>
+                </div>
+                <div class="section__description">
+                    <h2 class="section__description__name">Беларусь входит в число мировых лидеров по экспорту IT-услуг на душу населения.</h2>
+                    <p class="section__description__text building__description__text__color">С 2005 по 2016 годы экспорт IT-услуг и продуктов вырос в 30 раз, а доля IT-экспорта в общем объеме экспорта товаров и услуг выросла с 0,16% до 3,25%. В 2019 году экспорт ПВТ составил рекордные $2 млрд 195 млн с темпом роста в 155%. </p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="{% url 'main:it' %}" class="btn btn-secondary">Достижения Беларуси в IT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__data data__hidden">
+                    <div class="row text-center gy-12">
+                        <div class="col-sm-12 col-md-6">
+                            <h2 >На $1 млрд.</h2>
+                            <h5>Превысил экспорт ПВТ В 2017 году впервые в его истории.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>32-е место.</h2>
+                            <h5 class="data__hidden">В рейтинге Международного союза электросвязи Measuring Information Society Report(2017), дающем оценку развития ИКТ занимает Беларусь.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>Создание Суперкомпьютеров.</h2>
+                            <h5>Беларусь входит в немногочисленный "клуб" стран, которые этим занимаются.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>World of Tanks.</h2>
+                            <h5>Игра разработанная в Республике Беларусь. Одна из пяти самых прибыльных MMO-игр мира с более чем 160 млн (2020 г.)зарегистрированных пользователей.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="culture" class="culture" style="background: url({% static 'img/culture.jpg' %}) center no-repeat;">
+        <div class="container__blure">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center text-uppercase mb-5 section__title">Культура</h1>
+                    </div>
+                </div>
+                <div class="section__description">
+                    <h2 class="section__description__name">Богатая культура Беларуси – самобытность, разнообразие стилей, форм, направлений...</h2>
+                    <p class="section__description__text building__description__text__color">Самобытная художественная культура Беларуси формировалась на протяжении столетий.На протяжении всей истории нашу страну прославляли и продолжают прославлять оригинальные архитектурные и художественные школы, неповторимые произведения музыки и литературы.</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="{% url 'main:culture' %}" class="btn btn-secondary">Достижения Беларуси в Культуре</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__data data__hidden">
+                    <div class="row text-center gy-12">
+                        <div class="col-sm-12 col-md-6">
+                            <h2 >Фестивали.</h2>
+                            <h5>Ежегодня проходят на территории страны.Из них можно выделить:"Белорусская музыкальная осень"
+                                "Минская весна"
+                                "Золотой шлягер"
+                                "Музы Нясвіжа"
+                                "Славянски Базар"
+                                "Александрыя".
+                        </h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>5,6 тыс.</h2>
+                            <h5 class="data__hidden">Государственных организаций функционируют в сфере культуры.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>3</h2>
+                            <h5>Учреждения высшего образования функцианируют на терртитории страны, для подготовки кадров для сферы культуры.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>10 творческих союзов.</h2>
+                            <h5>Действует в Беларуси, объединяющих около 9 тыс. творцов страны.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="architecture" class="architecture" style="background: url({% static 'img/libiry.jpg' %}) center no-repeat;">
+        <div class="container__blure">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center text-uppercase mb-5 section__title">Архитектура</h1>
+                    </div>
+                </div>
+                <div class="section__description">
+                    <h2 class="section__description__name">В разнообразных стилях белорусских церквей, замков, дворцов и крепостей отражено влияние как восточной, так и западной культуры.</h2>
+                    <p class="section__description__text building__description__text__color">Несмотря на сложную историю, полную войн и разрушений, многие архитектурные ценности Беларуси сохранились.
+
+                        Наиболее древние сооружения в Беларуси относят к Средневековью.
+
+                        Различные направления в искусстве и религии повлияли на формирование архитектуры Беларуси. В стране можно найти образцы романского стиля и готики, барокко и классицизма, модерна и эклектики.</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="{% url 'main:architecture' %}" class="btn btn-secondary">Достижения Беларуси в Архитектуре</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__data data__hidden">
+                    <div class="row text-center gy-12">
+                        <div class="col-sm-12 col-md-6">
+                            <h2 >Брестская крепость.</h2>
+                            <h5>Построенная в 30-е гг. XIX века, – основная архитектурная достопримечательность Бреста.
+                        </h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>Спасо-Евфросиньевская церковь.</h2>
+                            <h5 class="data__hidden">Памятник древнерусской архитектуры (1152–61). На ее стенах и колоннах сохранились уникальные старинные фрески</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>Софийский собор.</h2>
+                            <h5>Памятник архитектуры XI – XVIII вв. Является одним из трех древнерусских храмов, посвященных Святой Софии, – два других находятся в Киеве и Новгороде.</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h2>Национальная библиотека Белорусси.</h2>
+                            <h5>Главная универсальная научная библиотека Белоруссии.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

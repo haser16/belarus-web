@@ -1,0 +1,41 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{% static 'css/game.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="icon" href="{% static 'img/coat-of-belarus.svg' %}">
+</head>
+<body>
+    {% block 'content' %}
+
+    {% endblock %}
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h4>ГУО Средняя школа №2 г. Черикова</h4>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-12 col-md-6">
+                    <h5>Ученики</h5>
+                    <p>Тихонов Денис Ильич</p>
+                    <p>Жмакина Виктория Витальевна</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h5>Учитель</h5>
+                    <p>Егоров Сергей Леонидович</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</html>
